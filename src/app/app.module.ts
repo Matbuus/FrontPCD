@@ -16,6 +16,7 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-etudiant.component';
 import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
 import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
     ProfileEtudiantComponent,
     ProfileEnseignantComponent,
     ProfileResponsableComponent,
+    HeaderComponent,
 
 
   ],
@@ -37,3 +39,5 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

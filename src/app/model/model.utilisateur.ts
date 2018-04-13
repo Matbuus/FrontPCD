@@ -6,5 +6,6 @@ export class Utilisateur {
   nom: string="";
   prenom: string="";
   role: string = "";
+  numcin: string = "";
 }
 
