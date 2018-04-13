@@ -2,20 +2,14 @@
 
 <div class="container">
   <div class="card card-container">
+    <h1 style="text-align: center"> Ajout d'un enseignant </h1>
     <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
     <p id="profile-name" class="profile-name-card"></p>
 
-    <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
-      <div class="alert alert-danger" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
-      <span id="reauth-email" class="reauth-email"></span>
-      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !fullName.valid }">
-        <label for="fullName">Full Name</label>
-        <input type="text" class="form-control" name="fullName" id="fullName" [(ngModel)]="user.fullName" #fullName="ngModel" required />
-        <div *ngIf="f.submitted && !fullName.valid" class="help-block">The full Name is required</div>
-      </div>
+    <form name="form" (ngSubmit)="register()" #f="ngForm" novalidate>
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
-        <label for="username">Email Address</label>
-        <input type="text" class="form-control" name="username" id="username" pattern="[^ @]*@[^ @]*" [(ngModel)]="user.username" #username="ngModel" required />
+        <label for="username">Adresse Email</label>
+        <input type="text" class="form-control" name="username" id="username" pattern="[^ @]*@[^ @]*" [(ngModel)]="compte.email" #username="ngModel" required />
         <div *ngIf="f.submitted && !username.valid" class="help-block">
 
           <div *ngIf="username.errors.required">
@@ -27,25 +21,45 @@
 
         </div>
       </div>
-      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" id="password"[(ngModel)]="user.password" #password="ngModel" required minlength="4" />
-        <div *ngIf="f.submitted && !password.valid" class="help-block">
 
-          <div *ngIf="password.errors.required">
-            password is required.
-          </div>
-          <div *ngIf="password.errors.minlength">
-            password must be at least 4 characters long.
-          </div>
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !numcin.valid }">
+        <label for="numcin">Numero cin</label>
+        <input type="text" class="form-control" name="cin" id="cin"[(ngModel)]="enseignant.numcin" #numcin="ngModel" required minlength="8" />
+        <div *ngIf="f.submitted " class="help-block">
 
         </div>
       </div>
+
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !id.valid }">
+        <label for="id">Id Enseignant</label>
+        <input type="text" class="form-control" name="id" id="id"[(ngModel)]="enseignant.idEnseignant" #id="ngModel" required minlength="8" />
+        <div *ngIf="f.submitted" class="help-block">
+
+        </div>
+      </div>
+
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !nom.valid }">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" name="nom" id="nom" [(ngModel)]="enseignant.nom" #nom="ngModel" required />
+        <div *ngIf="f.submitted && !nom.valid" class="help-block">Taper un nom correct </div>
+      </div>
+
+      <span id="reauth-email" class="reauth-email"></span>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !prenom.valid }">
+        <label for="prenom">Prenom</label>
+        <input type="text" class="form-control" name="prenom" id="prenom" [(ngModel)]="enseignant.prenom" #prenom="ngModel" required />
+        <div *ngIf="f.submitted && !prenom.valid" class="help-block">Taper un prenom correct </div>
+      </div>
+
+
       <div id="remember" class="checkbox">
 
       </div>
-      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Create Account</button>
-      <button [routerLink]="['/login']" class="btn btn-lg btn-danger btn-block btn-cancel" type="button">Cancel</button>
+      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ajouter</button>
+      <button [routerLink]="['/login']" class="btn btn-lg btn-danger btn-block btn-cancel" type="button">Annuler</button>
 
     </form><!-- /form -->
 

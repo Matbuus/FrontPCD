@@ -5,5 +5,7 @@ export class Utilisateur {
   compte: Compte;
   nom: string="";
   prenom: string="";
+  role: string = "";
+  numcin: string = "";
 }
 

@@ -6,8 +6,10 @@
  */
 body, html {
   height: 100%;
+  background-image: url("http://www.ensi-uma.tn/wp-content/uploads/2017/01/Ensi-01.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+  background-size: cover;
 }
 
 .card-container.card {

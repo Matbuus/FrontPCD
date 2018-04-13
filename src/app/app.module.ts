@@ -13,6 +13,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import {routing} from "./app.routing";
 import {FacebookModule} from "ngx-facebook";
 import {UrlPermission} from "./urlPermission/url.permission";
+import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-etudiant.component';
+import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
+import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -21,6 +25,10 @@ import {UrlPermission} from "./urlPermission/url.permission";
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
+    ProfileEtudiantComponent,
+    ProfileEnseignantComponent,
+    ProfileResponsableComponent,
+    HeaderComponent,
 
 
   ],
@@ -31,3 +39,5 @@ import {UrlPermission} from "./urlPermission/url.permission";
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
