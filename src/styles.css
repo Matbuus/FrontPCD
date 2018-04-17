@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 110%;
+  background-image: url("http://www.ensi-uma.tn/wp-content/uploads/2017/01/Ensi-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

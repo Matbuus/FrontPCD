@@ -20,20 +20,5 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
 
-// login out from the app
-  logOut() {
-    console.log("ok");
-    this.authService.logOut()
-      .subscribe(
-        data => {
-          this.router.navigate(['/login']);
-        },
-        error => {
 
-        });
-  }
-
-  test(){
-    console.log("Testing shit");
-  }
 }
