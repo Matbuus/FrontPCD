@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="card card-container">
-    <h1 style="text-align: center"> Ajout d'un enseignant </h1>
+    <h1 style="text-align: center"> Ajout d'un étudiant </h1>
     <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
     <p id="profile-name" class="profile-name-card"></p>
 
@@ -25,7 +25,7 @@
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !numcin.valid }">
         <label for="numcin">Numero cin</label>
-        <input type="text" class="form-control" name="cin" id="cin"[(ngModel)]="enseignant.numcin" #numcin="ngModel" required minlength="8" />
+        <input type="text" class="form-control" name="cin" id="cin"[(ngModel)]="etudiant.numcin" #numcin="ngModel" required minlength="8" />
         <div *ngIf="f.submitted " class="help-block">
 
         </div>
@@ -33,8 +33,8 @@
 
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !id.valid }">
-        <label for="id">Id Enseignant</label>
-        <input type="text" class="form-control" name="id" id="id"[(ngModel)]="enseignant.idEnseignant" #id="ngModel" required minlength="8" />
+        <label for="id">Numéro d'inscription</label>
+        <input type="text" class="form-control" name="id" id="id"[(ngModel)]="etudiant.numInscription" #id="ngModel" required minlength="8" />
         <div *ngIf="f.submitted" class="help-block">
 
         </div>
@@ -43,14 +43,14 @@
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !nom.valid }">
         <label for="nom">Nom</label>
-        <input type="text" class="form-control" name="nom" id="nom" [(ngModel)]="enseignant.nom" #nom="ngModel" required />
+        <input type="text" class="form-control" name="nom" id="nom" [(ngModel)]="etudiant.nom" #nom="ngModel" required />
         <div *ngIf="f.submitted && !nom.valid" class="help-block">Taper un nom correct </div>
       </div>
 
       <span id="reauth-email" class="reauth-email"></span>
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !prenom.valid }">
         <label for="prenom">Prenom</label>
-        <input type="text" class="form-control" name="prenom" id="prenom" [(ngModel)]="enseignant.prenom" #prenom="ngModel" required />
+        <input type="text" class="form-control" name="prenom" id="prenom" [(ngModel)]="etudiant.prenom" #prenom="ngModel" required />
         <div *ngIf="f.submitted && !prenom.valid" class="help-block">Taper un prenom correct </div>
       </div>
 
