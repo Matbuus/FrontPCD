@@ -17,6 +17,8 @@ import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-
 import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
 import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DocumentListComponent } from './components/documents/document-list.component';
+import {DocumentService} from "./services/document.service";
 
 
 @NgModule({
@@ -29,13 +31,14 @@ import { HeaderComponent } from './components/header/header.component';
     ProfileEnseignantComponent,
     ProfileResponsableComponent,
     HeaderComponent,
+    DocumentListComponent,
 
 
   ],
   imports: [
     BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
-  providers: [AuthService,AccountService,UrlPermission],
+  providers: [AuthService,AccountService,UrlPermission, DocumentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

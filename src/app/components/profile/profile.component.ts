@@ -2,6 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {AuthService} from "../../services/auth.service";
 import {Utilisateur} from "../../model/model.utilisateur";
 import {Router} from "@angular/router";
+import {DocumentListComponent} from "../documents/document-list.component";
 
 @Component({
   selector: 'app-profile',
