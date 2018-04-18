@@ -16,9 +16,7 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { DocumentsComponent } from './components/documents/documents.component';
-import { DocumentsListComponent } from './components/documents/documents-list/documents-list.component';
-import { DocumentsItemComponent } from './components/documents/documents-list/documents-item/documents-item.component';
+import { DocumentListComponent } from './components/document/document-list.component';
 
 
 @NgModule({
@@ -31,6 +29,7 @@ import { DocumentsItemComponent } from './components/documents/documents-list/do
     AjoutEnseignantComponent,
     AjoutEtudiantComponent,
     ProfileComponent,
+    DocumentListComponent
 
 
 
