@@ -16,6 +16,7 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import {ResponsablePermission} from "./urlPermission/responsable.permission";
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { ProfileComponent } from './components/profile/profile.component';
   imports: [
     BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
-  providers: [AuthService,AccountService,UrlPermission],
+  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
