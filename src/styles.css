@@ -1,16 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body, html {
-<<<<<<< HEAD
   height: 100%;
-=======
   height: 110%;
->>>>>>> myBranch
   background-image: url("http://img.over-blog-kiwi.com/0/27/39/95/201212/ob_e38dd2_383930-455615064482956-718261540-n-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-=======
-
->>>>>>> myBranch
 }

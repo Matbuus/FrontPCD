@@ -13,16 +13,11 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-etudiant.component';
 import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
 import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
-<<<<<<< HEAD
-import { HeaderComponent } from './components/header/header.component';
 import { DocumentListComponent } from './components/documents/document-list.component';
 import {DocumentService} from "./services/document.service";
-=======
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { DocumentListComponent } from './components/document/document-list.component';
->>>>>>> myBranch
 
 
 @NgModule({
@@ -32,16 +27,11 @@ import { DocumentListComponent } from './components/document/document-list.compo
     ProfileEtudiantComponent,
     ProfileEnseignantComponent,
     ProfileResponsableComponent,
-<<<<<<< HEAD
-    HeaderComponent,
     DocumentListComponent,
-=======
     AjoutEnseignantComponent,
     AjoutEtudiantComponent,
     ProfileComponent,
     DocumentListComponent
-
->>>>>>> myBranch
 
 
   ],
