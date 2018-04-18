@@ -25,7 +25,7 @@ export class AjoutEnseignantComponent implements OnInit {
 
   register() {
     console.log("Email : " + this.compte.email + " Nom : " + this.enseignant.nom + " Prenom " + this.enseignant.prenom + " ID " + this.enseignant.idEnseignant);
-    this.accountService.createAccount(this.enseignant, this.compte).subscribe(data => {
+    this.accountService.creerCompteEnseignant(this.enseignant, this.compte).subscribe(data => {
         this.router.navigate(['/login']);
       }, err => {
         console.log(err);
