@@ -13,20 +13,16 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-etudiant.component';
 import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
 import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
-import { DocumentListComponent } from './components/documents/document-list.component';
+import { DocumentListComponent } from './components/documents/documentsAdministratif/document-list.component';
 import {DocumentService} from "./services/document.service";
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
-<<<<<<< HEAD
-=======
-import { DocumentListComponent } from './components/document/document-list.component';
 import {ResponsablePermission} from "./urlPermission/responsable.permission";
 import { HeaderEnseignantComponent } from './components/header-enseignant/header-enseignant.component';
 import { HeaderResponsableComponent } from './components/header-responsable/header-responsable.component';
 import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
 import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
->>>>>>> myBranch
 
 
 @NgModule({
@@ -51,11 +47,7 @@ import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.
   imports: [
     BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
-<<<<<<< HEAD
-  providers: [AuthService,AccountService,UrlPermission, DocumentService],
-=======
-  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission],
->>>>>>> myBranch
+  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission,DocumentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

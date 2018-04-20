@@ -5,6 +5,7 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import {AjoutEtudiantComponent} from "./components/ajout-etudiant/ajout-etudiant.component";
 import {AjoutEnseignantComponent} from "./components/ajout-enseignant/ajout-enseignant.component";
 import {ResponsablePermission} from "./urlPermission/responsable.permission";
+import {DocumentListComponent} from "./components/documents/documentsAdministratif/document-list.component";
 
 
 const appRoutes: Routes = [
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   {path : 'profile/ajoutetudiant', component : AjoutEtudiantComponent,canActivate: [ResponsablePermission]},
   {path : 'profile/ajoutenseignant', component : AjoutEnseignantComponent,canActivate: [ResponsablePermission]},
+  {path: 'profile/documentsadministratifs', component: DocumentListComponent, canActivate: [ResponsablePermission]},
   // otherwise redirect to profile
   { path: '**', redirectTo: '/login' }
 ];

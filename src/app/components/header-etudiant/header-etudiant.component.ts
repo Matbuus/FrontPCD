@@ -22,7 +22,7 @@ export class HeaderEtudiantComponent implements OnInit {
   }
 
   logOut() {
-    console.log("ok");
+    console.log("o");
     this.authService.logOut()
       .subscribe(
         data => {
