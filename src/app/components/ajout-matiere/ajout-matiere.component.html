@@ -1,0 +1,17 @@
+<app-header-responsable></app-header-responsable>
+<div class="container">
+  <div class="card card-container">
+    <h1 style="text-align: center"> Ajout d'une matière </h1>
+    <form >
+    <input type="text" class="form-control" id="name"
+           required
+           [(ngModel)]="matiere.name" name="name"
+           #name="ngModel">
+    <div [hidden]="name.valid || name.pristine"
+         class="alert alert-danger">
+      Entrez un nom
+    </div>
+    </form>
+  </div>
+
+</div>

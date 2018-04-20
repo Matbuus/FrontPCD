@@ -16,7 +16,15 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
+<<<<<<< HEAD
 import { DocumentListComponent } from './components/document/document-list.component';
+=======
+import {ResponsablePermission} from "./urlPermission/responsable.permission";
+import { HeaderEnseignantComponent } from './components/header-enseignant/header-enseignant.component';
+import { HeaderResponsableComponent } from './components/header-responsable/header-responsable.component';
+import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
+import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
+>>>>>>> e2c097f4de52db827a930ddfb01821f297af17b4
 
 
 @NgModule({
@@ -29,7 +37,14 @@ import { DocumentListComponent } from './components/document/document-list.compo
     AjoutEnseignantComponent,
     AjoutEtudiantComponent,
     ProfileComponent,
+<<<<<<< HEAD
     DocumentListComponent
+=======
+    HeaderEnseignantComponent,
+    HeaderResponsableComponent,
+    HeaderEtudiantComponent,
+    AjoutMatiereComponent,
+>>>>>>> e2c097f4de52db827a930ddfb01821f297af17b4
 
 
 
@@ -37,7 +52,7 @@ import { DocumentListComponent } from './components/document/document-list.compo
   imports: [
     BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
-  providers: [AuthService,AccountService,UrlPermission],
+  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
