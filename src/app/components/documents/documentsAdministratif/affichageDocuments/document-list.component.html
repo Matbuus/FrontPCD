@@ -1,0 +1,16 @@
+<app-header-responsable></app-header-responsable>
+<div class="listedocs">
+  <h1> LISTE DES DOCUMENTS ADMINISTRATIFS </h1>
+  <p>
+    <li *ngFor="let document of tabDocuments">
+      <div class="card" style="width: 60%;">
+        <div class="card-body">
+          <h5 class="card-title">{{document.titre}}</h5>
+          <p class="card-text"></p>
+          <a href="{{document.nom}}" class="btn btn-primary" target="_self" download="{{document.nomOriginal}}" >Telecharger</a>
+        </div>
+      </div>
+    </li>
+  </p>
+</div>
+
