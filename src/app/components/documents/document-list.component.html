@@ -1,5 +1,5 @@
 <p>
 <li *ngFor="let document of tabDocuments">
-  {{ 'nom : ' + document.nom+"/nomOriginal : "+document.nomOriginal}}
+  <a href="{{document.nom}}" target="_self" download="{{document.nomOriginal}}">{{document.nomOriginal}} </a>
 </li>
 </p>
