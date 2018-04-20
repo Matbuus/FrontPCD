@@ -7,6 +7,9 @@
 }
 h1{
   text-align: center;
-  color: red;
+  color: brown;
   font-size: 70px;
+}
+.card-title{
+  text-transform: uppercase;
 }

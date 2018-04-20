@@ -5,8 +5,8 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import {AjoutEtudiantComponent} from "./components/ajout-etudiant/ajout-etudiant.component";
 import {AjoutEnseignantComponent} from "./components/ajout-enseignant/ajout-enseignant.component";
 import {ResponsablePermission} from "./urlPermission/responsable.permission";
-import {DocumentListComponent} from "./components/documents/documentsAdministratif/document-list.component";
-
+import {DocumentListComponent} from "./components/documents/documentsAdministratif/affichageDocuments/document-list.component";
+import {PublierDocumentComponent} from "./components/documents/documentsAdministratif/publierDocuments/publier-document.component";
 
 const appRoutes: Routes = [
   { path: 'profile', component:ProfileComponent ,canActivate: [UrlPermission] },
@@ -14,6 +14,7 @@ const appRoutes: Routes = [
   {path : 'profile/ajoutetudiant', component : AjoutEtudiantComponent,canActivate: [ResponsablePermission]},
   {path : 'profile/ajoutenseignant', component : AjoutEnseignantComponent,canActivate: [ResponsablePermission]},
   {path: 'profile/documentsadministratifs', component: DocumentListComponent, canActivate: [ResponsablePermission]},
+  {path: 'profile/publierdocumentadministratifs', component: PublierDocumentComponent, canActivate: [ResponsablePermission]},
   // otherwise redirect to profile
   { path: '**', redirectTo: '/login' }
 ];

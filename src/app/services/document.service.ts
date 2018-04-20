@@ -12,4 +12,8 @@ export class DocumentService{
       res.json());
   }
 
+  publierDocuments(file: any, titre: string){
+    return this.http.post(AppComponent.API_URL+"/responsable/documents/publier/"+titre , file  );
+}
+
 }

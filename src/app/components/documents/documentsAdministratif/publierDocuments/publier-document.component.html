@@ -1,0 +1,18 @@
+<app-header-responsable></app-header-responsable>
+<br><br>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">document administratif</h1>
+    <form (ngSubmit)="publier()">
+      <div class="form-group">
+        <label for="titre">Titre du document</label>
+        <input class="form-control form-control-lg" type="text" placeholder="titre" [ngModel]="titre">
+        <label for="exampleFormControlFile1">Document</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" [ngModel]="file">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Publier</button>
+    </form>
+  </div>
+</div>
+
+

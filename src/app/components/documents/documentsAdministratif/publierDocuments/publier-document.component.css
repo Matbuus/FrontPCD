@@ -1,0 +1,12 @@
+.jumbotron{
+ position: fixed;
+  top: 20%;
+  left: 15%;
+}
+
+.jumbotron h1{
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}

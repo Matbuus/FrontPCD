@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {DocumentService} from "../../../services/document.service";
-import {Document} from "../../../model/model.document";
+import {DocumentService} from "../../../../services/document.service";
+import {Document} from "../../../../model/model.document";
 import {Router} from "@angular/router";
 
 @Component({

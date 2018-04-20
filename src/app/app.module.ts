@@ -13,7 +13,7 @@ import {UrlPermission} from "./urlPermission/url.permission";
 import { ProfileEtudiantComponent } from './components/profile-etudiant/profile-etudiant.component';
 import { ProfileEnseignantComponent } from './components/profile-enseignant/profile-enseignant.component';
 import { ProfileResponsableComponent } from './components/profile-responsable/profile-responsable.component';
-import { DocumentListComponent } from './components/documents/documentsAdministratif/document-list.component';
+import { DocumentListComponent } from './components/documents/documentsAdministratif/affichageDocuments/document-list.component';
 import {DocumentService} from "./services/document.service";
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
@@ -23,6 +23,7 @@ import { HeaderEnseignantComponent } from './components/header-enseignant/header
 import { HeaderResponsableComponent } from './components/header-responsable/header-responsable.component';
 import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
 import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
+import { PublierDocumentComponent } from './components/documents/documentsAdministratif/publierDocuments/publier-document.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.
     HeaderResponsableComponent,
     HeaderEtudiantComponent,
     AjoutMatiereComponent,
+    PublierDocumentComponent,
 
 
   ],
