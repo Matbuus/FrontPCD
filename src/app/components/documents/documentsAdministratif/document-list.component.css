@@ -1,0 +1,12 @@
+.card{
+  display: block;
+  margin: auto;
+}
+.listedocs{
+  padding-top: 5%;
+}
+h1{
+  text-align: center;
+  color: red;
+  font-size: 70px;
+}
