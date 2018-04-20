@@ -16,6 +16,7 @@ import { ProfileResponsableComponent } from './components/profile-responsable/pr
 import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-enseignant.component';
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { DocumentListComponent } from './components/document/document-list.component';
 import {ResponsablePermission} from "./urlPermission/responsable.permission";
 import { HeaderEnseignantComponent } from './components/header-enseignant/header-enseignant.component';
 import { HeaderResponsableComponent } from './components/header-responsable/header-responsable.component';
@@ -33,6 +34,7 @@ import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.
     AjoutEnseignantComponent,
     AjoutEtudiantComponent,
     ProfileComponent,
+    DocumentListComponent,
     HeaderEnseignantComponent,
     HeaderResponsableComponent,
     HeaderEtudiantComponent,
