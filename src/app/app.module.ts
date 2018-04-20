@@ -17,6 +17,10 @@ import { AjoutEnseignantComponent } from './components/ajout-enseignant/ajout-en
 import { AjoutEtudiantComponent } from './components/ajout-etudiant/ajout-etudiant.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {ResponsablePermission} from "./urlPermission/responsable.permission";
+import { HeaderEnseignantComponent } from './components/header-enseignant/header-enseignant.component';
+import { HeaderResponsableComponent } from './components/header-responsable/header-responsable.component';
+import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
+import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
 
 
 @NgModule({
@@ -29,6 +33,11 @@ import {ResponsablePermission} from "./urlPermission/responsable.permission";
     AjoutEnseignantComponent,
     AjoutEtudiantComponent,
     ProfileComponent,
+    HeaderEnseignantComponent,
+    HeaderResponsableComponent,
+    HeaderEtudiantComponent,
+    AjoutMatiereComponent,
+
 
 
   ],
