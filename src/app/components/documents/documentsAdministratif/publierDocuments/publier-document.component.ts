@@ -17,5 +17,10 @@ export class PublierDocumentComponent implements OnInit {
 
   }
 
+  publier(){
+    console.log("Salut");
+    this.documentService.publierDocuments(this.file,this.titre);
+  }
+
 
 }
