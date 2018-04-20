@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {Matiere} from "../../model/model.matiere";
+import {Router} from "@angular/router";
+import {AccountService} from "../../services/account.service";
 
 @Component({
   selector: 'app-ajout-matiere',
@@ -11,9 +13,14 @@ export class AjoutMatiereComponent implements OnInit {
   matiere : Matiere = new Matiere();
 
 
-  constructor() { }
+  constructor(public accountService: AccountService, public router: Router) { }
 
   ngOnInit() {
   }
+  ajouter() {
 
+    console.log("nom : "+this.matiere.nom + "   duree  :  "+this.matiere.duree);
+
+
+    }
 }

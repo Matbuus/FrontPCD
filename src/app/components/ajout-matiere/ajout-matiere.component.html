@@ -2,16 +2,56 @@
 <div class="container">
   <div class="card card-container">
     <h1 style="text-align: center"> Ajout d'une matière </h1>
-    <form >
-    <input type="text" class="form-control" id="name"
-           required
-           [(ngModel)]="matiere.name" name="name"
-           #name="ngModel">
-    <div [hidden]="name.valid || name.pristine"
-         class="alert alert-danger">
-      Entrez un nom
-    </div>
+    <form name="form" (ngSubmit)="ajouter()" #f="ngForm" novalidate>
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !nom.valid }">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" name="nom" id="nom"[(ngModel)]="matiere.nom" #nom="ngModel"  required />
+        <div *ngIf="f.submitted " class="help-block">
+          <div *ngIf="nom.errors">
+            Entrez un nom.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Nombre d'heures </label>
+        <select class="custom-select form-group">
+          <option value="1">22.5 heures</option>
+          <option value="2">45 heures</option>
+          <option value="3">67.5 heures</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Niveau</label>
+      <div class="col-sm-10">
+        <div class="form-group">
+          <input class="form-check-input" type="radio" name="gridRadios" id="grid1" value="option1" checked>
+          <label class="form-check-label niveau" for="grid1">
+            II1
+          </label>
+        </div>
+        <div class="form-group">
+          <input class="form-check-input" type="radio" name="gridRadios" id="grid2" value="option2">
+          <label class="form-check-label niveau" for="grid2">
+            II2
+          </label>
+        </div>
+        <div class="form-group">
+          <input class="form-check-input" type="radio" name="gridRadios" id="grid3" value="option2">
+          <label class="form-check-label niveau" for="grid3">
+            II3
+          </label>
+        </div>
+      </div>
+
+      </div>
+
+
+
+      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ajouter</button>
     </form>
+
   </div>
 
 </div>
