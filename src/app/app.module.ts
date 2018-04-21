@@ -24,7 +24,7 @@ import { HeaderResponsableComponent } from './components/header-responsable/head
 import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
 import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
 import { PublierDocumentComponent } from './components/documents/documentsAdministratif/publierDocuments/publier-document.component';
-import {PdfViewerModule} from "ng2-pdf-viewer";
+
 
 @NgModule({
   declarations: [
@@ -47,7 +47,7 @@ import {PdfViewerModule} from "ng2-pdf-viewer";
 
   ],
   imports: [
-    BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),PdfViewerModule,
+    BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
   providers: [AuthService,AccountService,UrlPermission,ResponsablePermission,DocumentService],
   bootstrap: [AppComponent]

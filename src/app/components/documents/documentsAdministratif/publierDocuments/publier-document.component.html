@@ -8,7 +8,7 @@
         <label for="titre">Titre du document</label>
         <input class="form-control form-control-lg" type="text" placeholder="titre" [(ngModel)]="titre" name="titre">
         <label for="file">Document</label>
-        <input class="uploadfile-style" (change)="fileChange($event)" name="file" type="file">
+        <input class="uploadfile-style" [(ngModel)]="file" (change)="fileChange($event)" name="file" type="file">
       </div>
       <button type="submit" class="btn btn-primary mb-2">Publier</button>
     </form>
