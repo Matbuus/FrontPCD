@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
   encapsulation: ViewEncapsulation.None
 })
 export class DocumentListComponent implements OnInit {
+  pdfSrc : string = "../assets/a.pdf";
   tabDocuments: any = [];
   constructor(public documentService: DocumentService, public router: Router) {
     this.documentService.getDocuments().subscribe(data => {console.log(data); this.tabDocuments = data as Document []; })

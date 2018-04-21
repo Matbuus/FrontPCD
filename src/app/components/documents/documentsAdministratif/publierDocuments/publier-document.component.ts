@@ -22,10 +22,11 @@ export class PublierDocumentComponent implements OnInit {
       console.log(this.file.name);
 
     }
+    console.log(this.titre);
     this.formdata.append('file', this.file);
-    this.formdata.append('titre', this.titre);
 
   }
+
 
   constructor(public documentService: DocumentService, public router: Router) { }
 
@@ -34,8 +35,11 @@ export class PublierDocumentComponent implements OnInit {
   }
 
   publier(){
+
+    this.formdata.append('titre', this.titre);
+    console.log(this.titre);
     this.documentService.publierDocuments(this.formdata).subscribe(data=>{
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/profile/documentsadministratifs']);
       },err=>{
         this.errorMessage="erreur: Document incorrect";
       }
