@@ -3,6 +3,7 @@ import { Http, Headers, RequestOptions,Response} from '@angular/http';
 import {Document} from "../model/model.document";
 import 'rxjs/add/operator/map';
 import {AppComponent} from "../app.component";
+import {HttpHeaders} from "@angular/common/http";
 @Injectable()
 export class DocumentService{
   constructor(public http: Http) { }
@@ -12,8 +13,8 @@ export class DocumentService{
       res.json());
   }
 
-  publierDocuments(file: any, titre: string){
-    return this.http.post(AppComponent.API_URL+"/responsable/documents/publier/"+titre , file  );
+  publierDocuments(formdata: FormData){
+    return this.http.post(AppComponent.API_URL+"/responsable/documents/publier", formdata ).map((res: Response) => res.json());
 }
 
 }
