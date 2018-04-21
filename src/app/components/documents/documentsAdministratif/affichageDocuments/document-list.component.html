@@ -8,32 +8,23 @@
           <h5 class="card-title">{{document.titre}}</h5>
           <p class="card-text"></p>
           <a href="{{document.nom}}" class="btn btn-primary" target="_self" download="{{document.nomOriginal}}" >Telecharger</a>
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Lire {{document.titre}}
-        </button>
-      </h5>
-    </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <div>
-          <label>PDF src</label>
-          <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
-        </div>
-        <pdf-viewer [src]="pdfSrc"
-                    [render-text]="true"
-                    style="display: block;">
-
-        </pdf-viewer>
-      </div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Lire en ligne</button>
+  <div id="demo" class="collapse">
+    <div>
+      <label>PDF src</label>
+      <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
     </div>
+    <pdf-viewer [src]="pdfSrc"
+                [render-text]="true"
+                style="display: block;">
+
+    </pdf-viewer>
   </div>
-</div>
-      </div>
 
+
+</div>
+</div>
     </li>
   </p>
 </div>
