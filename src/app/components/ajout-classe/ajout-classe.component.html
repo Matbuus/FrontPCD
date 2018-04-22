@@ -1,31 +1,19 @@
 <app-header-responsable></app-header-responsable>
 <div class="container">
   <div class="card card-container">
-    <h1 style="text-align: center"> Ajout d'une matière </h1>
+    <h1 style="text-align: center"> Ajout d'une classe </h1>
     <form name="form" (ngSubmit)="ajouter()" #f="ngForm" novalidate>
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !nom.valid }">
         <label for="nom">Nom</label>
-        <input type="text" class="form-control" name="nom" id="nom"[(ngModel)]="matiere.nom" #nom="ngModel"  required />
+        <input type="text" class="form-control" name="nom" id="nom"[(ngModel)]="classe.nomClasse" #nom="ngModel"  required minlength="3" />
         <div *ngIf="f.submitted " class="help-block">
           <div *ngIf="nom.errors">
             Entrez un nom.
           </div>
         </div>
       </div>
-
-      <div class="form-group" >
-        <label>Nombre d'heures </label>
-        <select class="custom-select" name = "duree" id="duree" [(ngModel)]="matiere.duree" required>
-          <option selected="selected" [ngValue]="22.5" >22.5 heures</option>
-          <option [ngValue]="45">45 heures</option>
-          <option [ngValue]="67.5" >67.5 heures</option>
-        </select>
-      </div>
-
       <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ajouter</button>
     </form>
-
   </div>
-
 </div>

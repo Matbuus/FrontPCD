@@ -24,6 +24,9 @@ import { HeaderResponsableComponent } from './components/header-responsable/head
 import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
 import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
 import { PublierDocumentComponent } from './components/documents/documentsAdministratif/publierDocuments/publier-document.component';
+import {ClasseService} from "./services/classe.service";
+import {MatiereService} from "./services/matiere.service";
+import { AjoutClasseComponent } from './components/ajout-classe/ajout-classe.component';
 
 
 @NgModule({
@@ -43,13 +46,14 @@ import { PublierDocumentComponent } from './components/documents/documentsAdmini
     HeaderEtudiantComponent,
     AjoutMatiereComponent,
     PublierDocumentComponent,
+    AjoutClasseComponent,
 
 
   ],
   imports: [
     BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
   ],
-  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission,DocumentService],
+  providers: [AuthService,AccountService,UrlPermission,ResponsablePermission,DocumentService,ClasseService,MatiereService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
