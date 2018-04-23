@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spring boot and angular 4 secure authentication';
-  static API_URL="http://192.168.1.10:8080/pcd";
+  static API_URL="http://172.20.10.4:8080/pcd";
 }
