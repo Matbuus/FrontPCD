@@ -24,7 +24,14 @@ import { HeaderResponsableComponent } from './components/header-responsable/head
 import { HeaderEtudiantComponent } from './components/header-etudiant/header-etudiant.component';
 import { AjoutMatiereComponent } from './components/ajout-matiere/ajout-matiere.component';
 import { PublierDocumentComponent } from './components/documents/documentsAdministratif/publierDocuments/publier-document.component';
-
+import {AjoutClasseComponent} from "./components/ajout-classe/ajout-classe.component";
+import {MatieresListComponent} from "./components/documents/documentsDeClasse/mesDocuments/matieres-list.component";
+import { DocumentsParMatiereComponent } from './components/documents/documentsDeClasse/documents-par-matiere/documents-par-matiere.component';
+import {
+  PublierDocumentClasseComponent
+} from './components/documents/documentsDeClasse/publier-document-classe/publier-document-classe.component';
+import { PublierDocumentMatiereComponent } from './components/documents/documentsDeClasse/publier-document-matiere/publier-document-matiere.component';
+import { AutoriserDocumentComponent } from './components/documents/documentsDeClasse/autoriser-document/autoriser-document.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +50,12 @@ import { PublierDocumentComponent } from './components/documents/documentsAdmini
     HeaderEtudiantComponent,
     AjoutMatiereComponent,
     PublierDocumentComponent,
+    AjoutClasseComponent,
+    MatieresListComponent,
+    DocumentsParMatiereComponent,
+    PublierDocumentMatiereComponent,
+    PublierDocumentClasseComponent,
+    AutoriserDocumentComponent
 
 
   ],

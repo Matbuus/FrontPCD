@@ -1,0 +1,20 @@
+<app-header-enseignant></app-header-enseignant>
+<div class="container2">
+  <form>
+    <div class="form-group">
+      <h2>Autorisation</h2>
+      <p> Accordez une autorisation à une classe pour qu'elle puisse acceder au contenu de votre cours <b>"{{nomDocument}}"</b>.
+     <br> Choisissez la classe pour laquelle vous voulez accorder ce droit et cliquez ensuite sur "Autoriser l'accès".</p>
+    </div>
+
+    <div class="form-group classeSel">
+      <h2>Classe</h2>
+      <select class="form-control" id="exampleFormControlSelect1">
+          <option *ngFor="let classe of tabClasses" (click)="classeSelectionnee=classe; test(); idClasse=classe.idClasse" > {{classe.nomClasse}} </option>
+      </select>
+    </div>
+
+  </form>
+  <button class="btn btn-success test" (click)="autorisation()">Autoriser l'accès</button>
+</div>
+

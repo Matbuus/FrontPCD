@@ -1,4 +1,5 @@
 export class Matiere{
-  nom : String ="";
-  duree : Number ;
+  idMatiere: number = 0;
+  nom : string ="";
+  duree : number = 0;
 }

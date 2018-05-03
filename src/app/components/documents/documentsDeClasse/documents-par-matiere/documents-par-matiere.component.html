@@ -1,0 +1,21 @@
+<app-header-enseignant></app-header-enseignant>
+
+<div class="container2">
+  <div class="listedocs">
+    <h1> {{nomMatiere}}</h1>
+    <p>
+      <li *ngFor="let document of tabDocuments">
+        <div class="card" style="width: 60%;">
+          <div class="card-body">
+            <h5 class="card-title">{{document.titre}}</h5>
+    <p class="card-text">{{document.id}} {{document.description}}</p>
+    <a href="{{document.nom}}" class="btn btn-primary" target="_self" download="{{document.nomOriginal}}" >Telecharger</a>
+   <button class="btn btn-success" target="_self" (click)="idDocument = document.idDocument ; nomDocument = document.titre; autoriser()" >Donner Autorisation(s)</button>
+  </div>
+</div>
+</li>
+
+</p>
+</div>
+
+</div>

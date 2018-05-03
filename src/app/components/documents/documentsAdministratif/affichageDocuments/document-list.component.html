@@ -1,6 +1,11 @@
-<app-header-responsable></app-header-responsable>
+<div *ngIf="currentUser.role=='ETUDIANT'"><app-profile-etudiant></app-profile-etudiant></div>
+<div *ngIf="currentUser.role=='ADMIN'"><app-profile-responsable></app-profile-responsable></div>
+<div *ngIf="currentUser.role=='ENSEIGNANT'"><app-profile-enseignant></app-profile-enseignant></div>
+
+
+<div class="container2">
 <div class="listedocs">
-  <h1> LISTE DES DOCUMENTS ADMINISTRATIFS </h1>
+  <h1> Cours autorisés ( GL ) </h1>
   <p>
     <li *ngFor="let document of tabDocuments">
       <div class="card" style="width: 60%;">
@@ -13,5 +18,7 @@
   </li>
 
   </p>
+</div>
+
 </div>
 

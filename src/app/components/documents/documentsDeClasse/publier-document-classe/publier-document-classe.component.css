@@ -2,13 +2,41 @@
   display: block;
   margin: auto;
 }
+
 h1{
   text-align: center;
-  color: brown;
+  color: rgb(66,66,66);
   font-size: 70px;
 }
 .card-title{
   text-transform: uppercase;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+li{
+
+  text-align: center;
+  list-style-type: none;
+}
+h5{
+  font-size: 3em;
+
+}
+.card-body{
+  background-color: rgb(122,122,122);
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: green;
+  text-decoration: none;
+
 }
 
 .container2{

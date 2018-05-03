@@ -1,7 +1,8 @@
 export class Document{
   titre: string;
-  id : number ;
+  idDocument : number ;
   nom : string = "";
   nomOriginal : string = "" ;
   datePublication : Date  ;
+  description: string ="";
 }

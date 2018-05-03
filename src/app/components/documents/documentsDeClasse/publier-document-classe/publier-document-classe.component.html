@@ -1,0 +1,23 @@
+<app-header-enseignant></app-header-enseignant>
+
+
+<div class="container2">
+  <div class="listedocs">
+    <h1> Choisir une matière </h1>
+    <div class="block">
+      <p>
+      <li *ngFor="let matiere of tabMatieres">
+        <a href="/add/docdeclass" (click)="matiereSelectionneeAjout= matiere ; test()"><div class="card" style="width: 20%;">
+          <div class="card-body">
+            <h5 class="card-title">{{matiere.nom}}</h5>
+            <!-- <a href="{{document.nom}}" class="btn btn-primary" target="_self" download="{{document.nomOriginal}}" >Telecharger</a>
+           !--></div>
+        </div></a>
+      </li>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+
