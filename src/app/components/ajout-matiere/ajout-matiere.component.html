@@ -14,40 +14,14 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" >
         <label>Nombre d'heures </label>
-        <select class="custom-select form-group">
-          <option value="1">22.5 heures</option>
-          <option value="2">45 heures</option>
-          <option value="3">67.5 heures</option>
+        <select class="custom-select" name = "duree" id="duree" [(ngModel)]="matiere.duree" required>
+          <option selected="selected" [ngValue]="22.5" >22.5 heures</option>
+          <option [ngValue]="45">45 heures</option>
+          <option [ngValue]="67.5" >67.5 heures</option>
         </select>
       </div>
-      <div class="form-group">
-        <label>Niveau</label>
-      <div class="col-sm-10">
-        <div class="form-group">
-          <input class="form-check-input" type="radio" name="gridRadios" id="grid1" value="option1" checked>
-          <label class="form-check-label niveau" for="grid1">
-            II1
-          </label>
-        </div>
-        <div class="form-group">
-          <input class="form-check-input" type="radio" name="gridRadios" id="grid2" value="option2">
-          <label class="form-check-label niveau" for="grid2">
-            II2
-          </label>
-        </div>
-        <div class="form-group">
-          <input class="form-check-input" type="radio" name="gridRadios" id="grid3" value="option2">
-          <label class="form-check-label niveau" for="grid3">
-            II3
-          </label>
-        </div>
-      </div>
-
-      </div>
-
-
 
       <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ajouter</button>
     </form>

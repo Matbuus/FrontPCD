@@ -7,8 +7,9 @@ import {Http} from "@angular/http";
 @Injectable()
 export class MatiereService {
   constructor(public http: Http){}
-  ajouterMatiere(matiere:Matiere){
-    return this.http.post(AppComponent.API_URL+'/responsable/comptes/add/etudiant',matiere)
+  ajouterMatiere(matiere:Matiere  ){
+
+    return this.http.post(AppComponent.API_URL+'/responsable/matiere/add',matiere)
       .map(resp=>resp.json());
   }
 
